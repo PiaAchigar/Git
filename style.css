@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+/* Header */
+.header {
+  height: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.header img {
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  line-height: 60px;
+}
+
+/* Main */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  margin: 2em 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card__item {
+  background-color: rgb(75, 74, 74);
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em;
+  width: 30%;
+  height: 250px;
+  text-align: center;
+}
+
+.card__item h3 {
+  font-size: 1.4em;
+  text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 1px solid black;
+}
+
+.card__item p {
+  padding-top: 1em;
+  font-size: 1.1em;
+}
+
+.card__item i {
+  padding-top: 0.3em;
+  font-size: 3em;
+  color: black;
+}
+
+/* Lista */
+
+.comandos {
+  margin: 2em;
+}
+
+h2 {
+  padding: 0.4em;
+  background-color: rgb(139, 139, 139);
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+section ol {
+  background-color: rgb(165, 165, 165);
+}
+
+section li {
+  padding: 0.4em 1em;
+}
+
+/* Footer */
+footer {
+  padding: 1em;
+  background-color: black;
+  color: rgb(212, 212, 212);
+  text-align: center;
+}

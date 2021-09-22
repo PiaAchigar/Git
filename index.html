@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkeo el estilo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Git</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://git-scm.com/images/logo@2x.png" alt="logo git">
+    </header>
+    <div class="container">
+        <section class="card">
+            <article class="card__item">
+                <h3>¿Para qué sirve?</h3>
+                <p>Para versionar código.</p>
+                <p>Software que permite registrar todos los cambios de un proyecto.</p>
+            </article>
+            <article class="card__item">
+                <h3>Control de versiones distribuido</h3>
+                <p>Cada desarrollador tiene una copia idéntica del proyecto e historial de versiones en su equipo. Sin
+                    conexión.</p>
+            </article>
+            <article class="card__item">
+                <h3>Características</h3>
+                <ul>
+                    <li>
+                        Distribuido.
+                    </li>
+                    <li>
+                        Ramas (branch) y Fusiones (merge).
+                    </li>
+                    <li>
+                        Integridad de Datos.
+                    </li>
+                </ul>
+            </article>
+            <article class="card__item">
+                <h3>¿De dónde descargarlo?</h3>
+                <a href="https://git-scm.com/downloads" target="_blank"><i class="fas fa-download"></i></a>
+            </article>
+        </section>
+        <section class="comandos">
+            <h2>Lista de comandos</h2>
+            <ol>
+                <li>Abrir <strong>GIT BASH</strong>
+                    <ul>
+                        <li>Dirigirse a la carpeta contenedora</li>
+                        <li>Hacer click derecho</li>
+                        <li>Seleccionar <b>"Git Bash Here"</b></li>
+                    </ul>
+                </li>
+                <li>Configuración inicial por única vez (los datos van a quedar guardados en la computadora)
+                    <ul>
+                        <li><b>git config --global user.name "Tu Nombre"</b></li>
+                        <li><b>git config --global user.email tuemail@gmail.com</b></li>
+                        <li><b>git config --list</b> (para corroborar que los datos fueron cargados correctamente)</li>
+                    </ul>
+                </li>
+                <li>Para empezar a trabajar con git en nuestro proyecto
+                    <ul>
+                        <li><b>git init</b></li>
+                    </ul>
+                </li>
+                <li>Para clonar un repositorio (Proyecto) ya existente
+                    <ul>
+                        <li><b>git clone url</b></li>
+                    </ul>
+                </li>
+                <li>Para ver en qué estado se encuentran nuestros archivos
+                    <ul>
+                        <li><b>git status</b></li>
+                    </ul>
+                </li>
+                <li>Para agregar todos los archivos que contenga la carpeta utilizamos la primera opción. Para agregar
+                    alguno en particular podes usar la segunda cambiando el punto por el nombre del archivo (Ejemplo
+                    "index.html").
+                    <ul>
+                        <li><b>git add .</b></li>
+                        <li><b>git add index.html</b></li>
+                    </ul>
+                </li>
+                <li>Versionamos nuestros archivos dando un mensaje descriptivo
+                    <ul>
+                        <li><b>git commit -m "Mensaje"</b></li>
+                    </ul>
+                </li>
+                <li>Códigos de commits realizados
+                    <ul>
+                        <li><b>git log --oneline</b></li>
+                    </ul>
+                </li>
+                <li>Crear una nueva rama colocando el nombre que queremos (Ejemplo "nueva_rama")
+                    <ul>
+                        <li><b>git branch nombre_rama</b></li>
+                    </ul>
+                </li>
+                <li>Mostrar ramas
+                    <ul>
+                        <li><b>git branch -l</b></li>
+                    </ul>
+                </li>
+                <li>Eliminar rama
+                    <ul>
+                        <li><b>git branch -D nombre_rama</b></li>
+                    </ul>
+                </li>
+                <li>Para moverse a una rama utilizamos la primer opción. La segunda es para volver a una versión
+                    anterior indicando el código que obtenemos con el paso n° 7.
+                    <ul>
+                        <li><b>git checkout nombre_rama</b></li>
+                        <li><b>git checkout código</b></li>
+                    </ul>
+                </li>
+                <li>Para fusionar los cambios de las distintas ramas debemos estar en MASTER.
+                    <ul>
+                        <li><b>git merge nombre_rama</b></li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </div>
+    <footer>
+        <p>basic commands git</p>
+    </footer>
+</body>
+
+</html>
