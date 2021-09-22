@@ -1,4 +1,4 @@
-# Git :fa-git-square:
+# Git
 ## Conceptos básicos de git
 ### Tutoria CoderHouse
 
